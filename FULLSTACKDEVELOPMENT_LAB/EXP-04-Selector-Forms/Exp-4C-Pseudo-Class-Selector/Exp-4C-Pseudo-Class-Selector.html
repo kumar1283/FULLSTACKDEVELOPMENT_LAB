@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pseudo-class Selectors</title>
+    <style>
+      button {
+        background-color: aqua;
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+        border-color: black;
+      }
+      button:hover {
+        background-color: rgb(106, 248, 106);
+        color: red;
+      }
+      button:active {
+        background-color: white;
+      }
+      input:focus {
+        background-color: lightyellow;
+      }
+      li:first-child {
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pseudo-class Selectors</h1>
+    <button>Submit</button>
+    <br /><br />
+    <input type="text" placeholder="Click here to focus" />
+
+    <ul>
+      <li>First item</li>
+      <li>Second item</li>
+      <li>Third item</li>
+    </ul>
+  </body>
+</html>

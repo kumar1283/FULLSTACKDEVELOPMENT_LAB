@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JavaScript Input Methods</title>
+  </head>
+  <body>
+    <h1>JavaScript Input Methods</h1>
+    <input type="text" id="name" placeholder="Enter your name" />
+    <button onclick="showName()">Show Name</button>
+    <p id="result"></p>
+    <script>
+      var city = prompt("Enter your city:");
+      document.write("<p>City: " + city + "</p>");
+      
+      function showName() {
+        var n = document.getElementById("name").value;
+        document.getElementById("result").innerHTML = "Hello " + n;
+      }
+    </script>
+  </body>
+</html>

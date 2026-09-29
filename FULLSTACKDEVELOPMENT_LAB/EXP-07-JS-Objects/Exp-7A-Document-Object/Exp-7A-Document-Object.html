@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Document Object</title>
+  </head>
+  <body>
+    <h2 id="heading">Welcome</h2>
+    <p id="demo">Hello World</p>
+
+    <script>
+      // Document object properties
+      document.title = "Document Object Example";
+      document.bgColor = "lightyellow";
+
+      // Document object methods
+      document.write("Document URL: " + document.URL + "<br>");
+      document.write("Document Title: " + document.title + "<br>");
+
+      // Change HTML content
+      document.getElementById("heading").innerHTML = "JavaScript";
+      document.getElementById("demo").innerHTML = "Document Object";
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pseudo-element Selectors</title>
+    <style>
+      p::first-line {
+        color: blue;
+      }
+      p::first-letter {
+        font-size: 30px;
+        color: red;
+      }
+      h2::before {
+        content: "Start - ";
+        color: green;
+      }
+      h2::after {
+        content: " - End";
+        color: green;
+      }
+      ::selection {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pseudo-element Selectors</h1>
+    <p>
+      This is a paragraph used to show the first line and the first letter
+      styles. It is written with a little more text so that it goes onto a
+      second line in the browser window and we can see the effect clearly.
+    </p>
+    <h2>Heading</h2>
+  </body>
+</html>

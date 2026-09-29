@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Combinator Selectors</title>
+    <style>
+      div p {
+        color: blue;
+      }
+      div > span {
+        color: red;
+      }
+      h2 + p {
+        background-color: yellow;
+      }
+      h2 ~ p {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Descendant selector paragraph</p>
+      <span>Child selector span</span>
+      <section>
+        <span>This span is not a direct child</span>
+      </section>
+    </div>
+    <h2>Heading</h2>
+    <p>Adjacent sibling: right after the heading</p>
+    <p>General sibling: after the heading</p>
+    <p>General sibling: after the heading</p>
+  </body>
+</html>
