@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Denominations</title>
+  </head>
+  <body>
+    <h2>Deposit Denomination Breakdown</h2>
+
+    <script>
+      let amount = Number(prompt("Enter amount:"));
+      let notes = [500, 200, 100, 50, 20, 10];
+
+      for (let note of notes) {
+        let count = Math.floor(amount / note);
+        document.write(note + "'s: " + count + "<br>");
+        amount %= note;
+      }
+
+      document.write("Remaining amount: " + amount);
+    </script>
+  </body>
+</html>
