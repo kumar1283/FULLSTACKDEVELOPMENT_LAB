@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Timetable</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+
+      table {
+        border: 2px solid black;
+        border-collapse: collapse;
+        margin: 30px auto;
+        text-align: center;
+        background-color: white;
+        width: 95%;
+      }
+
+      caption {
+        font-size: 24px;
+        font-weight: bold;
+        padding: 15px;
+      }
+
+      th,
+      td {
+        border: 1px solid black;
+        padding: 12px 8px;
+        font-size: 17px;
+      }
+
+      th {
+        background-color: #dddddd;
+      }
+
+      .details {
+        background-color: white;
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      .day {
+        background-color: #eeeeee;
+        font-weight: bold;
+      }
+
+      .ce {
+        background-color: #65e83b;
+      }
+
+      .ds {
+        background-color: #ffff55;
+      }
+
+      .bcme {
+        background-color: #e8b94c;
+      }
+
+      .che {
+        background-color: #39ad68;
+      }
+
+      .devc {
+        background-color: #ffffff;
+      }
+
+      .lab {
+        background-color: #70f04b;
+        font-weight: bold;
+      }
+
+      .dslab {
+        background-color: #ffff55;
+        font-weight: bold;
+      }
+
+      .ews {
+        background-color: #e8b94c;
+        font-weight: bold;
+      }
+
+      .verbal {
+        background-color: #df9cbd;
+        font-weight: bold;
+      }
+
+      .sports {
+        background-color: #8da9d1;
+      }
+
+      .lunch {
+        background-color: #eeeeee;
+        font-weight: bold;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        letter-spacing: 3px;
+      }
+
+      .break {
+        background-color: #eeeeee;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table cellspacing="0" cellpadding="10">
+      <caption>
+        Class Timetable
+      </caption>
+
+      <tr class="details">
+        <td colspan="2">Year: B.Tech.</td>
+        <td colspan="2">Semester: II</td>
+        <td>Branch: IT</td>
+        <td>Section: B</td>
+        <td>Room No.: 14104</td>
+        <td colspan="2">w.e.f: 30-01-2025</td>
+      </tr>
+
+      <tr>
+        <th rowspan="2">Period / Day</th>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>Break</th>
+        <th>4</th>
+        <th>5</th>
+        <th>Break</th>
+        <th>6</th>
+      </tr>
+
+      <tr>
+        <th>09:00-10:00</th>
+        <th>10:00-11:00</th>
+        <th>11:00-12:00</th>
+        <th>12:00-01:00</th>
+        <th>01:00-02:00</th>
+        <th>02:00-03:00</th>
+        <th>03:00-03:10</th>
+        <th>03:10-04:30</th>
+      </tr>
+
+      <!-- Monday -->
+      <tr>
+        <td class="day">Monday</td>
+        <td class="ce">CE</td>
+        <td class="ds">DS</td>
+        <td class="bcme">BCME</td>
+        <td class="lunch" rowspan="6">Lunch</td>
+        <td class="dslab" colspan="4">← DS LAB →</td>
+      </tr>
+
+      <!-- Tuesday -->
+      <tr>
+        <td class="day">Tuesday</td>
+        <td class="ds">DS</td>
+        <td class="lab" colspan="2">← CE/CHE LAB →</td>
+        <td class="bcme">BCME</td>
+        <td class="ce">CE</td>
+        <td class="break"></td>
+        <td class="devc">DE&VC</td>
+      </tr>
+
+      <!-- Wednesday -->
+      <tr>
+        <td class="day">Wednesday</td>
+        <td class="bcme">BCME</td>
+        <td class="che">CHE</td>
+        <td class="devc">DE&VC</td>
+        <td class="verbal" colspan="4">← VERBAL TRAINING →</td>
+      </tr>
+
+      <!-- Thursday -->
+      <tr>
+        <td class="day">Thursday</td>
+        <td class="devc">DE&VC</td>
+        <td class="che">CHE</td>
+        <td class="devc">DE&VC</td>
+        <td class="bcme">BCME</td>
+        <td class="ds">DS</td>
+        <td class="break"></td>
+        <td class="sports">SPORTS</td>
+      </tr>
+
+      <!-- Friday -->
+      <tr>
+        <td class="day">Friday</td>
+        <td class="ews" colspan="3">← EWS →</td>
+        <td class="ce">CE</td>
+        <td class="che">CHE</td>
+        <td class="break"></td>
+        <td class="bcme">BCME</td>
+      </tr>
+
+      <!-- Saturday -->
+      <tr>
+        <td class="day">Saturday</td>
+        <td class="che">CHE</td>
+        <td class="devc">DE&VC</td>
+        <td class="ds">DS</td>
+        <td class="ds">DS</td>
+        <td class="lab" colspan="3">← CE/CHE LAB →</td>
+      </tr>
+    </table>
+  </body>
+</html>

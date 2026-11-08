@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <title>RegExp Object</title>
+  </head>
+  <body>
+    <h2>JavaScript RegExp Object</h2>
+
+    <script>
+      // Creating a regular expression
+      let pattern = /hello/i;
+      let text = "Hello World";
+
+      // RegExp property
+      document.write("Source: " + pattern.source + "<br>");
+      document.write("Ignore Case: " + pattern.ignoreCase + "<br>");
+
+      // RegExp methods
+      document.write("Test: " + pattern.test(text) + "<br>");
+      document.write("Match: " + pattern.exec(text));
+    </script>
+  </body>
+</html>

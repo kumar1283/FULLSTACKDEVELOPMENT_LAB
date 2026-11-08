@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Object Loops</title>
+  </head>
+  <body>
+    <h1>Print Object Data</h1>
+    <script>
+      var student = {
+        name: "Ravi",
+        age: 20,
+        course: "B.Tech",
+      };
+      var subjects = ["HTML", "CSS", "JavaScript"];
+      document.write("<h3>Using for-in loop</h3>");
+      for (var key in student) {
+        document.write(key + ": " + student[key] + "<br>");
+      }
+      document.write("<h3>Using forEach loop</h3>");
+      subjects.forEach(function (item) {
+        document.write(item + "<br>");
+      });
+      document.write("<h3>Using for-of loop</h3>");
+      for (var value of Object.values(student)) {
+        document.write(value + "<br>");
+      }
+    </script>
+  </body>
+</html>

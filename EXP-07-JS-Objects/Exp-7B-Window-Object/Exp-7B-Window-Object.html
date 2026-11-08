@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Window Object</title>
+  </head>
+  <body>
+    <h2>Window Object Example</h2>
+
+    <button onclick="showInfo()">Click Me</button>
+
+    <script>
+      // Window object properties
+      document.write("Width: " + window.innerWidth + "<br>");
+      document.write("Height: " + window.innerHeight + "<br>");
+
+      // Window object methods
+      function showInfo() {
+        alert("Welcome to JavaScript!");
+        window.confirm("Are you sure?");
+        window.open("https://www.google.com");
+      }
+    </script>
+  </body>
+</html>

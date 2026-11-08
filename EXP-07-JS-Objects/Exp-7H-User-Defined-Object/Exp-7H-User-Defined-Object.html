@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <title>User Defined Object</title>
+  </head>
+  <body>
+    <h2>User Defined Object</h2>
+
+    <script>
+      // Constructor
+      function Student(name, age) {
+        this.name = name;
+        this.age = age;
+
+        // Method
+        this.display = function () {
+          document.write("Name: " + this.name + "<br>");
+          document.write("Age: " + this.age + "<br>");
+        };
+      }
+
+      // Creating object
+      let s1 = new Student("Kumar", 20);
+
+      // Accessing properties
+      document.write("Name: " + s1.name + "<br>");
+      document.write("Age: " + s1.age + "<br>");
+
+      // Calling method
+      s1.display();
+    </script>
+  </body>
+</html>
